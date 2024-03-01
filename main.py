@@ -12,8 +12,8 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGener
 
 
 load_dotenv()
-os.getenv("api_key")
-google.generativeai.configure(api_key=os.getenv("api_key"))
+os.getenv("GOOGLE_API_KEY")
+google.generativeai.configure(GOOGLE_API_KEY=os.getenv("GOOGLE_API_KEY"))
 
 
 def text_ext(pdf_docs):
