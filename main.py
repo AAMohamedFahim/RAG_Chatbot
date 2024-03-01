@@ -11,9 +11,10 @@ from dotenv import load_dotenv
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 
 
-load_dotenv()
-os.getenv("GOOGLE_API_KEY")
-google.generativeai.configure(GOOGLE_API_KEY=os.getenv("GOOGLE_API_KEY"))
+api_key = "AIzaSyDbUIH_v0oLZPMWPBDCoc5HX3SvlCFDhr4"
+
+# Configure the API with your API key
+google.generativeai.configure(api_key=api_key)
 
 
 def text_ext(pdf_docs):
